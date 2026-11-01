@@ -9,8 +9,9 @@ const STUDIOS_APPLICATION_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdliWQ
 // Mailchimp audience signup address: the form "action" URL from Mailchimp's
 // Audience → Signup forms → Embedded forms code. It's public, not a secret key.
 const MAILCHIMP_FORM_URL = "https://gmail.us21.list-manage.com/subscribe/post?u=8ecefd0f5dcec27b700b1eaef&id=397aca327b";
-// Mailchimp tag IDs (the numbers in the embedded form's hidden "tags" field) for each form.
-const MAILCHIMP_TAGS = { newsletter: "", product: "", course: "" };
+// Mailchimp tag IDs for each form: Website Signup, Product Waitlist, Course Waitlist
+// (Audience → Tags; the ID is the number in each tag's "View" link).
+const MAILCHIMP_TAGS = { newsletter: "3016738", product: "3016739", course: "3016740" };
 
 // Sends one email to Mailchimp. Mailchimp's embedded forms only answer cross-site
 // requests through JSONP, so this loads its post-json URL as a script.
