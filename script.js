@@ -38,9 +38,9 @@ function subscribe(email, tagId) {
 }
 
 // Mailing list pop-up (Paper design "Pop-up A · Sunflower Split").
-// Shows once after 8 seconds or halfway down the page, then stays away for 14 days
-// after it's closed, and for good once the visitor subscribes.
-const POPUP_DELAY_MS = 8000;
+// Opens as soon as the page loads (a short pause lets the page draw first), then stays
+// away for 14 days after it's closed, and for good once the visitor subscribes.
+const POPUP_DELAY_MS = 600;
 const POPUP_SNOOZE_DAYS = 14;
 const POPUP_SEEN_KEY = "ab_popup_closed_at";
 const POPUP_SUBSCRIBED_KEY = "ab_subscribed";
