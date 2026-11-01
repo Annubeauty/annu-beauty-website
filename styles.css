@@ -375,10 +375,11 @@ a.svc { color: var(--ink); }
 .shop-hero .signup-error { color: #8A1C1C; }
 
 /* ---------- Mailing list pop-up (Paper "Pop-up A · Sunflower Split") ---------- */
-.mc-popup { position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; padding: 20px; background: rgba(10,10,10,.6); opacity: 0; visibility: hidden; transition: opacity .35s ease, visibility .35s; }
+.mc-popup { position: fixed; inset: 0; z-index: 100; display: flex; padding: 20px; overflow-y: auto; overscroll-behavior: contain; background: rgba(10,10,10,.6); opacity: 0; visibility: hidden; transition: opacity .35s ease, visibility .35s; }
 .mc-popup.open { opacity: 1; visibility: visible; }
 body.popup-open { overflow: hidden; }
-.mc-popup-card { display: flex; width: 880px; max-width: 100%; min-height: 540px; background: var(--paper); border-radius: 28px; overflow: visible; position: relative; box-shadow: 0 30px 80px rgba(0,0,0,.35); transform: translateY(24px) scale(.97); transition: transform .45s cubic-bezier(.2,.8,.2,1); }
+/* margin: auto centers the card but lets the backdrop scroll when the screen is shorter than the card */
+.mc-popup-card { display: flex; margin: auto; width: 880px; max-width: 100%; min-height: 540px; background: var(--paper); border-radius: 28px; overflow: visible; position: relative; box-shadow: 0 30px 80px rgba(0,0,0,.35); transform: translateY(24px) scale(.97); transition: transform .45s cubic-bezier(.2,.8,.2,1); }
 .mc-popup.open .mc-popup-card { transform: none; }
 .mc-popup-photo { width: 400px; flex-shrink: 0; border-radius: 28px 0 0 28px; background: url(images/hero-main.jpg) 55% 25% / cover; position: relative; }
 .mc-popup-photo::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 160px; border-radius: 0 0 0 28px; background: linear-gradient(180deg, rgba(255,200,26,0) 0%, rgba(255,200,26,.9) 100%); }
