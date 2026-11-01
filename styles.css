@@ -430,3 +430,18 @@ body.popup-open { overflow: hidden; }
   .seo-prose p, .seo-prose li { font-size: 16px; }
   .faq summary { font-size: 17px; }
 }
+
+/* Retightening price table */
+.price-table-wrap { overflow-x: auto; border: 1.5px solid var(--ink); border-radius: 22px; background: var(--paper); }
+.price-table { width: 100%; border-collapse: collapse; font-size: 17px; }
+.price-table th, .price-table td { padding: 18px 22px; text-align: left; border-bottom: 1px solid var(--line); }
+.price-table th { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #6B6B6B; }
+.price-table tbody tr:last-child td { border-bottom: 0; }
+.price-table td:first-child { font-weight: 700; }
+.price-table td + td { font-weight: 300; font-size: 22px; }
+.table-note { margin-top: 18px; color: var(--muted); font-size: 15px; line-height: 1.55; text-align: center; }
+@media (max-width: 760px) {
+  .price-table th, .price-table td { padding: 14px 12px; }
+  .price-table th { font-size: 10px; letter-spacing: .08em; }
+  .price-table td + td { font-size: 18px; }
+}
