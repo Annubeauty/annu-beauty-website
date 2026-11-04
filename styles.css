@@ -120,6 +120,7 @@ section { position: relative; }
 .package .lead { color: var(--muted); font-size: 15px; line-height: 1.5; margin-top: 6px; }
 .package .price-box { padding: 14px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .package .price { font-size: 30px; font-weight: 300; }
+.package .price small { display: block; margin-bottom: 4px; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; opacity: .65; }
 .package .price-note { font-size: 13px; color: #6B6B6B; line-height: 1.5; }
 .package ul { list-style: none; display: flex; flex-direction: column; gap: 10px; flex-grow: 1; }
 .package li { position: relative; padding-left: 18px; font-size: 14px; line-height: 1.5; color: #222; }
