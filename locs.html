@@ -102,14 +102,9 @@
     .lp-pkg-top { display: flex; justify-content: space-between; align-items: center; }
     .lp-badge { padding: 4px 10px; background: var(--sun); color: var(--ink); border-radius: 99px; font-size: 10px; font-weight: 700; letter-spacing: .12em; }
 
-    /* Reviews */
+    /* Photos */
     .lp-photos { display: flex; gap: 10px; overflow-x: auto; margin: 22px calc(var(--pad) * -1) 0; padding: 0 var(--pad); scrollbar-width: none; }
     .lp-photos img { width: 150px; height: 190px; object-fit: cover; border-radius: 16px; flex-shrink: 0; }
-    .lp-reviews { display: grid; gap: 14px; margin-top: 22px; }
-    .lp-review { display: flex; flex-direction: column; gap: 12px; padding: 22px; background: var(--cream); border-radius: 18px; }
-    .lp-stars { font-size: 16px; letter-spacing: .2em; }
-    .lp-review p { font-size: 15px; line-height: 1.55; }
-    .lp-review cite { font-style: normal; font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
 
     /* How to book */
     .lp-book-steps { list-style: none; display: flex; flex-direction: column; gap: 18px; margin: 24px 0; }
@@ -175,7 +170,6 @@
       .lp-packages { grid-template-columns: repeat(2, 1fr); }
       .lp-photos { margin: 28px 0 0; padding: 0; overflow: visible; }
       .lp-photos img { flex: 1; width: auto; height: 420px; }
-      .lp-reviews { grid-template-columns: repeat(3, 1fr); }
       .lp-split { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
       .lp-book .lp-btns { max-width: 440px; }
       .lp-talk { text-align: left; }
@@ -349,17 +343,12 @@
 
   <section class="lp-sec">
     <div class="lp-wrap">
-      <span class="lp-eyebrow">Real loc journeys</span>
-      <h2 class="lp-h2">Hear it from my clients.</h2>
+      <span class="lp-eyebrow">Loc gallery</span>
+      <h2 class="lp-h2">Loc styles to love.</h2>
       <div class="lp-photos">
         <img src="images/client-1.jpg" alt="Sisterlocks styled in knots with geometric parts">
         <img src="images/client-2.jpg" alt="Smiling client with long red Sisterlocks">
         <img src="images/client-3.jpg" alt="Short curly Sisterlocks from the side">
-      </div>
-      <div class="lp-reviews">
-        <blockquote class="lp-review"><span class="lp-stars" aria-label="5 stars">★★★★★</span><p>"I was so nervous about how my locs would look in the beginning, but Ashayla walked me through every stage. My consultation alone taught me more about my hair than years of braids ever did. I feel polished and confident, and I finally have my Saturdays back."</p><cite>Casey Kelly</cite></blockquote>
-        <blockquote class="lp-review"><span class="lp-stars" aria-label="5 stars">★★★★★</span><p>"I'd been burned by a loctician before, so trust was everything for me. Ashayla checked my scalp, explained exactly what she was doing and why, and never rushed me. My locs are neat, my edges are coming back, and I actually look forward to my retightenings."</p><cite>Alecia Wright</cite></blockquote>
-        <blockquote class="lp-review"><span class="lp-stars" aria-label="5 stars">★★★★★</span><p>"From the consultation to the 3-week follow-up, everything felt intentional. Ashayla really knows thick, kinky hair. My locs look beautiful at work and on the weekend, and I've stopped worrying about my hair."</p><cite>Vicki Kelly</cite></blockquote>
       </div>
     </div>
   </section>
