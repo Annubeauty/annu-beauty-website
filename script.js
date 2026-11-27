@@ -3,7 +3,7 @@
 // GlossGenius blocks its booking pages from loading inside other sites, so book.html
 // links out instead of embedding it.
 const BOOKING_URL = "https://annubeauty.glossgenius.com/";
-// Studios tenant application (Google Form), from annu-beauty-studios/business.md
+// Studios tenant application (Google Form), from context/studios/business.md
 const STUDIOS_APPLICATION_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdliWQSTItCp7wikvUxP4TWMgnQ5GjYojZNPTmUUyylLul2nQ/viewform";
 
 // Mailchimp audience signup address: the form "action" URL from Mailchimp's
